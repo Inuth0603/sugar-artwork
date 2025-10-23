@@ -66,15 +66,9 @@ disabled_opacity = 0.5
 
     -GtkScrolledWindow-scrollbar-spacing: 0;
 
-    -GtkExpander-expander-size: $font_height;
-    -GtkExpander-expander-spacing: 2;
-
     -GtkTreeView-expander-size: $font_height;
 
     -GtkArrow-arrow-size: 1.0;
-
-    -GtkProgressBar-min-horizontal-bar-height: $subcell_size;
-    -GtkProgressBar-min-vertical-bar-width: $subcell_size;
 
     -GtkWidget-text-handle-width: 110px;
     -GtkWidget-text-handle-height: 110px;
@@ -495,6 +489,8 @@ scrollbar slider:active {
 /* Progress bars */
 
 progressbar progress {
+    min-height: $(subcell_size)px;
+    min-width: $(subcell_size)px;
     background: @white;
     border-color: @button_grey;
     border-radius: $(subcell_size)px;
@@ -503,6 +499,8 @@ progressbar progress {
 }
 
 progressbar trough {
+    min-height: $(subcell_size)px;
+    min-width: $(subcell_size)px;
     background: @selection_grey;
     border-style: solid;
     border-radius: $(subcell_size)px;
@@ -928,4 +926,10 @@ EvView {
 EvView:selected,
 ApDocView:selected {
     background: @selection_grey;
+}
+
+expander arrow {
+    min-height: $(font_height)px;
+    min-width: $(font_height)px;
+    margin: 2px;
 }
