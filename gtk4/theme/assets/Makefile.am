@@ -1,0 +1,18 @@
+assets =			\
+	checkbox-unchecked.svg		\
+	checkbox-unchecked-selected.svg	\
+	checkbox-checked.svg		\
+	checkbox-checked-selected.svg	\
+	radio.svg			\
+	radio-selected.svg		\
+	radio-active.svg		\
+	radio-active-selected.svg	\
+	scale-slider.svg		\
+	scale-slider-active.svg		\
+	viewsource-imageBox-bg.svg
+
+sugar72dir = $(datadir)/themes/sugar-72/gtk-4.0/assets
+sugar100dir = $(datadir)/themes/sugar-100/gtk-4.0/assets
+
+dist_sugar72_DATA = $(assets)
+dist_sugar100_DATA = $(assets)

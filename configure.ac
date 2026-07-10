@@ -97,5 +97,8 @@ gtk3/theme/3.20/Makefile
 gtk3/theme/assets/Makefile
 gtk3/theme/assets/72/Makefile
 gtk3/theme/assets/100/Makefile
+gtk4/Makefile
+gtk4/theme/Makefile
+gtk4/theme/assets/Makefile
 ])
 AC_OUTPUT
